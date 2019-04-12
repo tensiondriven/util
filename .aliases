@@ -1,0 +1,36 @@
+# aliases
+alias s="bundle exec rake db:migrate ; foreman start"
+alias c="bundle exec rails c"
+alias con="git diff --name-only | uniq | xargs subl"
+alias fp="git add . ; git commit --amend --no-edit ; git push -f"
+alias vag="vagrant up ; vagrant ssh"
+alias wp="./bin/webpack-dev-server"
+alias kc="kubectl"
+
+alias cb="git rev-parse --abbrev-ref HEAD"
+alias preflight="yarn flow && yarn eslint && yarn jest && yarn relay && bundle exec rubocop"
+
+alias files='git diff --name-only HEAD^1 HEAD'
+alias amend='git add --verbose $(git diff --name-only HEAD^1 HEAD) ; git commit --quiet --amend --no-edit'
+alias amendp="amend ; git push origin HEAD -f"
+alias deploy="git push heroku master -f"
+
+alias gca="git commit --amend"
+alias gcom="git checkout master"
+alias gpom="git push origin master"
+alias gs="git status"
+alias cb="git rev-parse --abbrev-ref HEAD"
+
+alias e="yarn ; expo start --ios"
+alias be="bundle exec"
+alias exp="expo"
+
+# Phoenix shortcuts
+alias mt='echo "mix test" && mix test'
+alias mps='echo "mix phx.server" && mix phx.server'
+alias ph='echo "phantomjs --wd" && phantomjs --wd'
+alias hexdocs='mix hex.docs offline'
+
+alias td='cd ~/Code/tealdog'
+alias hc='cd ~/Code/hireclub_web'
+
