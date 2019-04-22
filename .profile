@@ -24,5 +24,4 @@ export PATH="/usr/local/opt/mysql-client/bin:$PATH"
 
 test -s "$HOME/.kiex/scripts/kiex" && source "$HOME/.kiex/scripts/kiex"
 
-cd ~/Code
-
+td
