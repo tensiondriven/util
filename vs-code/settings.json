@@ -1,0 +1,22 @@
+{
+  "editor.fontSize": 16,
+  "window.zoomLevel": 1,
+  "gitlens.hovers.currentLine.over": "line",
+  "files.autoSave": "onFocusChange",
+  "editor.minimap.enabled": false,
+  "files.autoSaveDelay": 0,
+  "editor.formatOnSave": true,
+  "editor.tabSize": 2,
+  "editor.detectIndentation": false,
+  "gitlens.codeLens.enabled": false,
+  "workbench.tree.indent": 20,
+  "workbench.statusBar.feedback.visible": false,
+  "breadcrumbs.enabled": true,
+  "workbench.startupEditor": "none",
+  "terminal.integrated.fontSize": 14,
+  "[elixir]": {},
+  "html.format.endWithNewline": true,
+  "files.associations": {
+    "*.eex": "html"
+  }
+}

@@ -21,6 +21,7 @@ alias mt='echo "mix test" && mix test'
 alias mps='echo "mix phx.server" && mix phx.server'
 alias ph='echo "phantomjs --wd" && phantomjs --wd'
 alias hexdocs='mix hex.docs offline'
+alias resetdb="mix ecto.drop ; mix ecto.create ; mix ecto.migrate"
 
 alias hist="history | grep"
 
