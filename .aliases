@@ -23,6 +23,8 @@ alias ph='echo "phantomjs --wd" && phantomjs --wd'
 alias hexdocs='mix hex.docs offline'
 alias resetdb="mix ecto.drop ; mix ecto.create ; mix ecto.migrate"
 
+alias psqld="psql tealdog_dev"
+
 alias hist="history | grep"
 
 alias td='cd ~/Code/tealdog'
