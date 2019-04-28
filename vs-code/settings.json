@@ -35,4 +35,7 @@
     "*.leex": "elixir",
   },
   "elixirLS.dialyzerEnabled": false,
+  "[elixir]": {
+    "editor.defaultFormatter": "maxmellen.elixir-language-support"
+  },
 }

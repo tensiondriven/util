@@ -24,4 +24,6 @@ export PATH="/usr/local/opt/mysql-client/bin:$PATH"
 
 test -s "$HOME/.kiex/scripts/kiex" && source "$HOME/.kiex/scripts/kiex"
 
+export ERL_AFLAGS="-kernel shell_history enabled"
+
 td
