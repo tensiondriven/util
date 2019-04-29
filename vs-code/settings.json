@@ -1,6 +1,6 @@
 {
   "editor.fontSize": 16,
-  "window.zoomLevel": 1,
+  "window.zoomLevel": 0,
   "gitlens.hovers.currentLine.over": "line",
   "files.autoSave": "onFocusChange",
   "editor.minimap.enabled": false,
@@ -38,4 +38,5 @@
   "[elixir]": {
     "editor.defaultFormatter": "maxmellen.elixir-language-support"
   },
+  "workbench.editor.enablePreview": false,
 }
