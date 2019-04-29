@@ -6,8 +6,8 @@ alias con="git diff --name-only | uniq | xargs subl"
 alias cb="git rev-parse --abbrev-ref HEAD"
 
 alias files='git --no-pager diff --name-only HEAD^1 HEAD'
-alias amend='git add --verbose $(git diff --name-only HEAD^1 HEAD) ; git commit --quiet --amend --no-edit'
-alias amendp="amend ; git push origin HEAD -f"
+alias amend='git add --verbose $(git diff --name-only HEAD^1 HEAD) ; git commit --quiet --amend --no-edit ; git status'
+alias amendp="amend ; git push origin HEAD -f ; git status"
 alias deploy="git push heroku master -f"
 
 alias gca="git commit --amend"
