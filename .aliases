@@ -28,5 +28,6 @@ alias psqld="psql tealdog_dev"
 alias hist="history | grep"
 
 alias td='cd ~/Code/tealdog'
-alias hc='cd ~/Code/hireclub_web'
+alias rtl='cd ~/Code/reassembling-the-line'
+alias util='cd ~/Code/util'
 

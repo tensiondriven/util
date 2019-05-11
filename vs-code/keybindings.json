@@ -1,8 +1,7 @@
 // Place your key bindings in this file to override the defaultsauto[]
-[
-  {
+[{
     "key": "shift+cmd+r",
-    "command": "workbench.action.splitEditor"
+    "command": "multiCommand.splitRight"
   },
   {
     "key": "cmd+\\",
@@ -14,7 +13,7 @@
   },
   {
     "key": "shift+cmd+d",
-    "command": "workbench.action.splitEditorDown"
+    "command": "multiCommand.splitEditorDown"
   },
   {
     "key": "ctrl+tab",
