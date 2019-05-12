@@ -16,11 +16,11 @@
     "command": "multiCommand.splitEditorDown"
   },
   {
-    "key": "ctrl+alt+[arrowRight]",
-    "command": "workbench.action.nextEditor"
+    "key": "shift+cmd+w",
+    "command": "workbench.action.closeOtherEditors"
   },
   {
-    "key": "ctrl+alt+[arrowLeft]",
-    "command": "workbench.action.previousEditor"
+    "key": "alt+cmd+t",
+    "command": "-workbench.action.closeOtherEditors"
   }
 ]
