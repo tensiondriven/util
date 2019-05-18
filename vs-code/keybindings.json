@@ -24,8 +24,9 @@
     "command": "-workbench.action.closeOtherEditors"
   },
   {
-    "key": "cmd+escape",
-    "command": "workbench.action.toggleSidebarVisibility"
+    "key": "escape",
+    "command": "workbench.action.toggleSidebarVisibility",
+    "when": "editorTextFocus"
   },
   {
     "key": "cmd+b",
