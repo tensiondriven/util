@@ -22,12 +22,19 @@ alias mps='echo "mix phx.server" && mix phx.server'
 alias ph='echo "phantomjs --wd" && phantomjs --wd'
 alias hexdocs='mix hex.docs offline'
 alias resetdb="mix ecto.drop ; mix ecto.create ; mix ecto.migrate"
+alias iexx="iex -S mix"
 
 alias psqld="psql tealdog_dev"
+alias psqlb="psql balls_dev"
 
 alias hist="history | grep"
 
 alias td='cd ~/Code/tealdog'
+alias cop='cd ~/Code/cop-archive'
+alias balls='cd ~/Code/balls'
 alias rtl='cd ~/Code/reassembling-the-line'
 alias util='cd ~/Code/util'
 
+alias ls='ls -lGH'
+
+alias displays="displayplacer \"id:605D479C-A2A2-E46D-A13C-FFAEC2099087 res:2560x1440 hz:75 color_depth:8 scaling:off origin:(0,0) degree:0\" \"id:C9CF355C-87D4-7F59-B920-CB13D1D74F4D res:1920x1080 hz:60 color_depth:8 scaling:off origin:(2560,0) degree:0\" \"id:E25DFA9F-9D9A-A81F-4D32-1827C0CE3A4E res:1920x1080 hz:60 color_depth:8 scaling:off origin:(-1920,0) degree:0\""
