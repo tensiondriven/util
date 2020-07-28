@@ -22,8 +22,14 @@ export CPPFLAGS="-I/usr/local/opt/node@8/include"
 
 export PATH="/usr/local/opt/mysql-client/bin:$PATH"
 
-test -s "$HOME/.kiex/scripts/kiex" && source "$HOME/.kiex/scripts/kiex"
+cd ~/Code/tealdog
 
 export ERL_AFLAGS="-kernel shell_history enabled"
+export PLUG_EDITOR="vscode://file/__FILE__:__LINE__"
 
-td
+
+. /usr/local/opt/asdf/asdf.sh
+# . /usr/local/opt/asdf/etc/bash_completion.d/asdf.bash
+
+
+cal

@@ -8,8 +8,9 @@ alias cb="git rev-parse --abbrev-ref HEAD"
 alias files='git --no-pager diff --name-only HEAD^1 HEAD'
 alias amend='git add --verbose $(git diff --name-only HEAD^1 HEAD) ; git commit --quiet --amend --no-edit ; git status'
 alias amendp="amend ; git push origin HEAD -f ; git status"
-alias deploy="git push heroku master -f"
-
+alias deploy!="git push origin master ; git push heroku master -f"
+alias quick-deploy!='git add . ; git commit -m "Minor change, quick deploy." ; git push origin master ; git push heroku master'
+alias minor='git add . ; git commit -m "Minor change."'
 alias gca="git commit --amend"
 alias gcom="git checkout master"
 alias gpom="git push origin master"
@@ -17,15 +18,20 @@ alias gs="git status"
 alias cb="git rev-parse --abbrev-ref HEAD"
 
 # Phoenix shortcuts
-alias mt='echo "mix test" && mix test'
 alias mps='echo "mix phx.server" && mix phx.server'
+alias mt='mix test || mix test --failed'
+alias test='mix test || mix test --failed'
 alias ph='echo "phantomjs --wd" && phantomjs --wd'
 alias hexdocs='mix hex.docs offline'
 alias resetdb="mix ecto.drop ; mix ecto.create ; mix ecto.migrate"
 alias iexx="iex -S mix"
 
+alias br='git for-each-ref --sort="-authordate:iso8601" --format=" %(authordate:relative)%09%(refname:short)" refs/heads'
+
 alias psqld="psql tealdog_dev"
 alias psqlb="psql balls_dev"
+
+alias refresh-db="killall beam.smp ; psql postgres -c \"drop database tealdog_dev;\" ; heroku pg:pull DATABASE_URL tealdog_dev ; psql tealdog_dev -c \"update orgs set slack_team_id = null, slack_info = '{}' ; update roles set slack_channel_id = null, slack_info = '{}' ; update users set slack_user_id = null, slack_info = '{}'\""
 
 alias hist="history | grep"
 
@@ -37,4 +43,4 @@ alias util='cd ~/Code/util'
 
 alias ls='ls -lGH'
 
-alias displays="displayplacer \"id:605D479C-A2A2-E46D-A13C-FFAEC2099087 res:2560x1440 hz:75 color_depth:8 scaling:off origin:(0,0) degree:0\" \"id:C9CF355C-87D4-7F59-B920-CB13D1D74F4D res:1920x1080 hz:60 color_depth:8 scaling:off origin:(2560,0) degree:0\" \"id:E25DFA9F-9D9A-A81F-4D32-1827C0CE3A4E res:1920x1080 hz:60 color_depth:8 scaling:off origin:(-1920,0) degree:0\""
+alias displays="displayplacer \"id:26966E67-8795-66BD-A407-A074D413E4A7 res:2560x1440 hz:60 color_depth:8 scaling:off origin:(0,0) degree:0\" \"id:C9CF355C-87D4-7F59-B920-CB13D1D74F4D res:1920x1080 hz:60 color_depth:8 scaling:off origin:(-1920,0) degree:0\" \"id:7384ABD9-364F-7016-C14D-F146FB39AC4C res:1920x1080 hz:60 color_depth:8 scaling:off origin:(2560,0) degree:0\""
